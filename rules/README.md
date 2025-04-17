@@ -93,9 +93,7 @@ No setup needed. Just HTML + JS.
 1. Go to the `/source` folder  
 2. Double-click `index.html` to open in your browser
 
-That’s it! No frameworks, no build tools, no terminal required.
 
----
 
 ✅ Stay consistent, commit often, and ask questions if you're stuck!
 ```
