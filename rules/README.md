@@ -1,12 +1,3 @@
-Got it! Here's your **clean, focused `README.md`** with only the content you asked for:
-
-- 📋 **Collaboration Rules**  
-- 🧑‍💻 **How to Contribute using GitHub**  
-- 🌐 **How to Run the Project Locally (HTML/CSS/JS only)**  
-
-No project background. Just the practical stuff for teamwork and development.
-
-
 # 🛠️ Collaboration Rules & Local Development Guide
 
 This project uses only **HTML**, **CSS**, and **vanilla JavaScript** — no frameworks or libraries.
