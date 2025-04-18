@@ -12,10 +12,10 @@
 
       </header>
       <!-- Landing Page -->
-      <main id="landing-page">
+      <section id="landing-page">
         <h1>Crisis Cards</h1>
-        <button>Start</button>
-      </main>
+        <button id="startBtn">Start</button>
+      </section>
       <!-- Main Page -->
       <main id="main-page" hidden>
          <section id="card-area">
@@ -29,6 +29,17 @@
          <button id="shuffleBtn">Shuffle</button>
       </main>
       <!-- Nav --> 
+      <script>
+         const startBtn = document.getElementById('startBtn');
+         const landingPage = document.getElementById('landing-page');
+         const mainPage = document.getElementById('main-page');
+     
+         startBtn.addEventListener('click', () => {
+           landingPage.hidden = true;
+           mainPage.hidden = false;
+         });
+       </script>
+
       <footer>
         
       </footer>
