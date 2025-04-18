@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Card Website Title</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-      
-    </header>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Crisis Cards</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <header>
 
-    <main>
-      
-    </main>
-
-    <footer>
-
-    </footer>
-
-    <!-- <script src="index.js"></script> -->
-  </body>
+      </header>
+      <!-- Landing Page -->
+      <!-- Main Page -->
+      <main id="main-page" hidden>
+         <section id="card-area">
+            <div id="draw-pile">
+               <img id="draw-img" src="back-of-card.png" alt="Draw Pile">
+            </div>
+            <div id="discard-pile">
+               <img id="discard-img" src="placeholder.png" alt="Discard Pile">
+            </div>
+         </section>
+         <button id="shuffleBtn">Shuffle</button>
+      </main>
+      <!-- Nav --> 
+      <footer>
+        
+      </footer>
+      <!-- JavaScript Modules -->
+      <script type="module" src="card.js"></script>
+      <script type="module" src="deck.js"></script>
+   </body>
 </html>
