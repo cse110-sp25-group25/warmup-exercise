@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /*Landing Page Section*/
+  #landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*Title*/
+  #landing-page h1 {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 40px;
+  }
+  
+  /*Start Button*/
+  #startBtn {
+    padding: 20px 60px;
+    font-size: 18px;
+    background-color: #d9d9d9; /*Light gray*/
+    border: none;
+    border-radius: 0px; /*Square edges*/
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #startBtn:hover {
+    background-color: #c0c0c0;
+  }
+
+/*To center the screen*/
+  #main-page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  
