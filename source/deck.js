@@ -17,7 +17,7 @@ export function cardToString(card) {
   }
 
 //When getting new shuffled deck, need to call shuffle on buildDeck()
-export function shuffle(deck, { inPlace = true, rng = Math.random } = {}) {
+export function shuffle(deck, {rng = Math.random } = {}) {
   const d = deck
   for (let i = d.length - 1; i > 0; i--) {
     const j = Math.floor(rng() * (i + 1));
