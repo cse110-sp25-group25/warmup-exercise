@@ -30,14 +30,16 @@
       </main>
       <!-- Nav --> 
       <script>
-         const startBtn = document.getElementById('startBtn');
-         const landingPage = document.getElementById('landing-page');
-         const mainPage = document.getElementById('main-page');
-     
-         startBtn.addEventListener('click', () => {
-           landingPage.hidden = true;
-           mainPage.hidden = false;
-         });
+         window.onload = () => {
+           const startBtn = document.getElementById('startBtn'); 
+           const landingPage = document.getElementById('landing-page');
+           const mainPage = document.getElementById('main-page');
+       
+           startBtn.addEventListener('click', () => {
+             landingPage.style.display = 'none';
+             mainPage.style.display = 'flex';
+           });
+         };
        </script>
 
       <footer>
