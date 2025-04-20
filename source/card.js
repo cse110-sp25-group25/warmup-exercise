@@ -15,6 +15,11 @@ class PlayingCard extends HTMLElement {
       </div>
     `;
   }
+
+  renderBack() {
+    const backDiv = this.shadowRoot.querySelector(".back");
+    backDiv.innerHTML = '<span style="border:1px black; border-style:solid">◆</span>';
+  }
 }
 
 customElements.define('playing-card', PlayingCard);
