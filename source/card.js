@@ -15,6 +15,12 @@ class PlayingCard extends HTMLElement {
       </div>
     `;
 
+    // if flipped attribute is added then apply flipped state
+    if (this.hasAttribute('flipped')) {
+      this.flipped = true;
+      this.shadowRoot.querySelector('.card').classList.add('flipped');
+    }
+
     this.shadowRoot.querySelector('.card').addEventListener('click', () => this.flip());
   }
 
