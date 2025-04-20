@@ -14,6 +14,24 @@ class PlayingCard extends HTMLElement {
         </div>
       </div>
     `;
+
+    this.shadowRoot.querySelector('.card').addEventListener('click', () => this.flip());
+  }
+
+  flip(){
+    this.flipped = !this.flipped;
+    
+    const cardElement = this.shadowRoot.querySelector('.card');
+    
+    if (this.flipped) {
+      cardElement.classList.add('flipped');
+    } else {
+      cardElement.classList.remove('flipped');
+    }
+  }
+
+  isFlipped(){
+    return this.flipped;
   }
 
   renderBack() {
