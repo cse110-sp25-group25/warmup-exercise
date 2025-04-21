@@ -23,10 +23,12 @@ class PlayingCard extends HTMLElement {
 
   renderFront() {
     const frontDiv = this.shadowRoot.querySelector(".front");
-    const content = this.innerHTML.trim();
-    frontDiv.innerHTML = content
-    ? content : '<span style="border:1px solid black; padding: 4px;">?</span>';
+    const rank = this.getAttribute('rank') || '?';
+    const suit = this.getAttribute('suit') || '♠';
+    if (frontDiv) {
+      frontDiv.innerHTML = `<span style="border: 1px solid black; padding: 4px;">${rank} ${suit}</span>`;
+    }
   }
-  }
+}
 
 customElements.define('playing-card', PlayingCard);
