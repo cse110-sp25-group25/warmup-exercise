@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Crisis Cards</title>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="code/styles.css">
    </head>
    <body>
       <header>
@@ -20,7 +20,7 @@
       <main id="main-page" hidden>
          <section id="card-area">
             <div id="draw-pile">
-               <img src="assets/card-back.png" alt="Draw Pile">
+               <img src="code/assets/card-back.png" alt="Draw Pile">
             </div>
             <div id="discard-pile" class="empty"></div>
          </section>
@@ -44,10 +44,10 @@
         
       </footer>
       <!-- JavaScript Modules -->
-      <script type="module" src="card.js"></script>
-      <script type="module" src="deck.js"></script>
+      <script type="module" src="code/card.js"></script>
+      <script type="module" src="code/deck.js"></script>
       <script type="module">
-        import { buildDeck, shuffle } from './deck.js';
+        import { buildDeck, shuffle } from './code/deck.js';
 
         // Initialize deck
         let deck = shuffle(buildDeck());
