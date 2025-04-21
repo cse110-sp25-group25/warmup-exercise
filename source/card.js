@@ -5,6 +5,10 @@ class PlayingCard extends HTMLElement {
     this.flipped = false;
   }
 
+  static get observedAttributes() {
+    return ['flipped'];
+  }
+
   connectedCallback() {
     this.shadowRoot.innerHTML = `
       <div class="card">
@@ -15,14 +19,19 @@ class PlayingCard extends HTMLElement {
       </div>
     `;
 
-    // if flipped attribute is added then apply flipped state
-    if (this.hasAttribute('flipped')) {
-      this.flipped = true;
-      this.shadowRoot.querySelector('.card').classList.add('flipped');
-    }
-
-    this.shadowRoot.querySelector('.card').addEventListener('click', () => this.flip());
   }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'flipped') {
+      const card = this.shadowRoot.querySelector('.card');
+      if (card) {
+        card.classList.toggle('flipped', newValue !== null);
+        this.flipped = newValue !== null;
+      }
+    }
+  }
+  
+    
 
   flip(){
     this.flipped = !this.flipped;
