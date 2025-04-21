@@ -1,8 +1,11 @@
 # **Team 25: Quarter Life Crisis** Warmup Exercise
 
-GitHub Repo Link: https://github.com/cse110-sp25-group25/warmup-exercise
+GitHub Repo Link: [https://github.com/cse110-sp25-group25/warmup-exercise](https://github.com/cse110-sp25-group25/warmup-exercise)
 
-YouTube Link:
+GitHub Pages Link: [https://cse110-sp25-group25.github.io/warmup-exercise/](https://cse110-sp25-group25.github.io/warmup-exercise/)
+
+YouTube Link: [https://youtu.be/22gggqSPYH4](https://youtu.be/22gggqSPYH4)
+
 
 ---
 
